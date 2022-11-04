@@ -1,0 +1,36 @@
+.product {
+    width: 345px;
+    height: 447px;
+    box-shadow: var(--box-shadow) var(--box-shadow-for-card);
+    border-radius: 10px;
+    padding: 30px;
+    background: var(--white-900);
+    margin-bottom: 20px;
+
+    .description {
+        margin-bottom: 13px;
+        min-height: 15%;
+        font-weight: 500;
+        font-size: 16px;
+
+        span {
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.03rem;
+            font-weight: 700;
+        }
+    }
+
+    .viewProduct {
+        width: 285px;
+        height: 40px;
+        border-radius: 5px;
+        background: var(--purple-900);
+        color: var(--white-900);
+    }
+
+    .image {
+        border-radius: 10px;
+        border: 1px solid;
+    }
+}

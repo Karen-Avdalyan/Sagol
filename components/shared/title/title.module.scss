@@ -1,0 +1,29 @@
+.titleContainer {
+    width: fit-content;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--font-color);
+}
+
+.border {
+    height: 9px;
+    width: 60%;
+    border-radius: 4.5px;
+    background-color: var(--button-background);
+}
+
+.borderContainer {
+    display: flex;
+    margin: 10px 5px;
+}
+
+@media screen and (max-width: 452px) {
+    .title {
+        font-size: 20px;
+    }
+}

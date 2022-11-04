@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["mongodb"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("NEXT_PUBLIC_DATABASE_URL")
+}
+
+
+model OpenPosition {
+  //TODO complate OpenJobs model
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  position String
+  experienceLevel String
+  jobResponsibilities String
+  qualifications String
+}

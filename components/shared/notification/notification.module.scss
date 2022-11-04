@@ -1,0 +1,19 @@
+.error {
+  :global(.ant-notification-notice-message) {
+    color: red;
+    font-weight: 700;
+  }
+  border: 1px solid red;
+  color: rgb(255, 4, 4);
+  padding: '20px';
+}
+
+.success {
+  :global(.ant-notification-notice-message) {
+    color: #041d4c;
+    font-weight: 700;
+  }
+  border: none;
+  color: black;
+  padding: '20px';
+}

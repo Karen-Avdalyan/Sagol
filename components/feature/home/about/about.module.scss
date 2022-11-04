@@ -1,0 +1,208 @@
+.aboutContainer {
+    background-color: var(--purple-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 200px;
+    padding: 80px 30px;
+    margin-top: 80px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .gifBox {
+        height: 400px;
+        min-width: 557px;
+        min-height: 700px;
+        max-height: 707px;
+        background: url("/icons/airCleaner.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .gifBoxDark {
+        height: 400px;
+        min-width: 280px;
+        max-height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 60%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .textBox {
+        max-width: 880px;
+
+        .moreButton {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: var(--white-900);
+            text-align: end;
+            cursor: pointer;
+            &.moreButtonHe {
+                text-align: start;
+                cursor: pointer;
+            }
+            &:hover {
+                font-size: 17px;
+                transition: 0.2s;
+            }
+        }
+
+        .title,
+        .description {
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 18px;
+            letter-spacing: 0.03em;
+            color: var(--white-900);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .aboutContainer {
+        column-gap: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutContainer {
+        column-gap: 50px;
+        padding: 32px;
+
+        .gifBox {
+            width: 200px;
+            height: 300px;
+        }
+
+        .gifBoxDark {
+            width: 200px;
+            height: 300px;
+        }
+
+        .textBox {
+            .title {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 942px) {
+    .aboutContainer {
+        margin-top: 24px;
+        column-gap: 20px;
+
+        .gifBox {
+            height: 180px;
+            width: 140px;
+        }
+
+        .gifBoxDark {
+            width: 140px;
+            height: 180px;
+        }
+
+        .textBox {
+            .title {
+                font-size: 20px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 688px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+    .aboutContainer {
+        padding: 50px;
+
+        .textBox {
+            text-align: center;
+        }
+
+        .gifBox {
+            height: 200px;
+        }
+
+        .gifBoxDark {
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .aboutContainer {
+        padding: 40px 20px;
+
+        .gifBox {
+            width: 150px;
+            height: 200px;
+            margin-bottom: 18px;
+        }
+
+        .gifBoxDark {
+            width: 150px;
+            height: 200px;
+            margin-bottom: 18px;
+        }
+
+        .textBox {
+            .title {
+                font-size: 26px !important;
+            }
+
+            .description {
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .aboutContainer {
+        padding: 36px 20px 54px 20px;
+
+        .gifBox {
+            height: 100px;
+            min-width: 150px;
+        }
+
+        .gifBoxDark {
+            height: 100px;
+            min-width: 200px;
+        }
+
+        .textBox {
+            .title {
+                font-size: 20px !important;
+            }
+
+            .description {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

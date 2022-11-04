@@ -1,0 +1,20 @@
+.contactUs {
+    background-color: var(--gray);
+    padding-top: 40px;
+}
+
+.backgroundImage {
+    background-image: url("/image/contactBg.png");
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+        color: var(--white-900);
+        font-weight: 700;
+        font-size: 48px;
+    }
+}

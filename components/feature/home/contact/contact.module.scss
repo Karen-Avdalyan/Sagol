@@ -1,0 +1,9 @@
+.contactBox {
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 619px) {
+  .contactBox {
+    padding: 0px;
+  }
+}

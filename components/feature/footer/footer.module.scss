@@ -1,0 +1,229 @@
+.footerContainer {
+    background-color: var(--purple-900);
+    position: relative;
+
+    .arrowUp {
+        position: absolute;
+        bottom: 15%;
+        right: 12%;
+        background-color: var(--white-900);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        transition: 0.3s all ease;
+
+        &:hover {
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+        }
+    }
+}
+
+.footerBox > .lastBox {
+    max-width: 1440px;
+}
+
+.emailsection {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    &.emailsectionHe {
+        flex-direction: row-reverse;
+        column-gap: 15px;
+    }
+
+    p {
+        color: var(--white-900);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 5px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+
+    .button {
+        width: 77px !important;
+        height: 30px !important;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px !important;
+        background-color: var(--white-900) !important;
+
+        p {
+            margin-left: 30%;
+            margin-top: 35%;
+            color: var(--purple-900) !important;
+        }
+    }
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .footerInfoText {
+        width: 24;
+        height: 24px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.input {
+    display: flex !important;
+    outline: none !important;
+    font-size: 16px !important;
+    height: 30px;
+    font-weight: 400 !important;
+    border-radius: 5px !important;
+    padding: 10px 25px;
+    background-color: var(--footer-color) !important;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04) !important;
+    color: var(--white-900) !important;
+
+    &:focus {
+        border: 1px solid var(--white-900) !important;
+    }
+}
+
+.footerText {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerBox {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 150px;
+    max-width: 1440px;
+}
+
+.footerLogoInfo {
+    row-gap: 15px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5px 0px 0px 10px;
+    }
+
+    .mobileSocialIcons {
+        display: none;
+    }
+
+    .emailAddress:hover,
+    .addressForSend:hover,
+    .phoneContact:hover {
+        a {
+            font-weight: 700;
+            color: var(--white-900);
+        }
+    }
+}
+
+.socialIncons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 170px;
+    column-count: 2;
+    column-gap: 15px;
+}
+
+.socialIcons {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 12px;
+}
+
+.middleBox {
+    color: var(--purple-900);
+    width: max-content;
+
+    div {
+        margin-bottom: 10px;
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.lastBox {
+    color: var(--purple-900);
+
+    div {
+        margin-bottom: 10px;
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.infoTitle {
+    color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footerText {
+    color: var(--white-900);
+    margin: auto;
+    max-width: 1440px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 190px;
+}
+
+.footerBox {
+    justify-content: space-between;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 1440px) {
+    .footerBox {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 760px) {
+    .arrowUp {
+        width: 37px !important;
+        height: 37px !important;
+
+        img {
+            width: 15px !important;
+            height: 10px !important;
+        }
+    }
+    .footerBox {
+        display: block;
+    }
+    .contactInfo {
+        justify-content: center;
+    }
+    .emailsection {
+        justify-content: center;
+    }
+}

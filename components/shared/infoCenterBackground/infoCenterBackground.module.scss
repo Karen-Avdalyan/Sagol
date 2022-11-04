@@ -1,0 +1,34 @@
+.infoCenterBackground {
+    background-position: center;
+    height: 520px;
+    color: var(--white-900);
+    padding-top: 210px;
+    padding-left: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        .InfoCenterTitle {
+            font-size: 48px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 65px;
+            letter-spacing: 0.05em;
+        }
+
+        .InfoCenterText {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+        }
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .infoCenterBackground {
+        padding: 10px;
+    }
+}

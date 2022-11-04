@@ -1,0 +1,47 @@
+.fieldCard {
+    max-width: 467px;
+    width: 100%;
+    &:nth-child(1),
+    &:nth-child(2) {
+        max-width: 710px;
+        margin: 20px auto;
+    }
+    margin-bottom: 33px;
+    .cardBackgroundImg {
+        position: relative;
+        margin-bottom: 16px;
+        .cardTitle {
+            font-size: 32px;
+            line-height: 44px;
+            font-weight: 800;
+            color: var(--white-900);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+    .cardDiscription {
+        margin-bottom: 13px;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400;
+        letter-spacing: 0.03rem;
+        color: var(--black-900);
+        &.cardDiscriptionHe {
+            text-align: end;
+        }
+    }
+    .cardButton {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: var(--purple-900);
+        text-align: end;
+        cursor: pointer;
+        &.cardButtonHe {
+            text-align: start;
+        }
+    }
+}

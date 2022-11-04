@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.litvaLampsContainer {
+    width: 100%;
+    padding: 55px 15px 197px 15px;
+    background-color: var(--white-900);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .breadcrumb {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        &.breadcrumbHe {
+            right: 100px;
+            left: unset;
+        }
+    }
+
+    .litvaLampsSection {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .leftSection {
+            max-width: 588px;
+            width: 100%;
+
+            .sectionNavInfo {
+                max-width: 365px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                list-style: none;
+                color: var(--black-900);
+
+                li:nth-child(3) {
+                    color: var(--purple-900);
+                }
+            }
+
+            .bigImage {
+                position: relative;
+                margin-bottom: 16px;
+                max-width: 588px;
+                height: 588px;
+                filter: drop-shadow(var(--box_shadow_nav));
+                border-radius: 10px;
+                background-color: var(--white-900);
+
+                .zoomButton {
+                    position: absolute;
+                    width: 66px;
+                    height: 66px;
+                    top: 22px;
+                    left: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--white-900);
+                    border-radius: 50%;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+            }
+
+            .zoomImageContainer {
+                position: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: var(--black-900);
+                z-index: 1000;
+                cursor: pointer;
+
+                .zoomImageSection {
+                    width: 45vw;
+                    height: 45vw;
+                }
+            }
+
+            .smallImages {
+                display: flex;
+                max-width: 330px;
+                width: 100%;
+                justify-content: space-between;
+
+                .smallImage {
+                    display: flex;
+                    justify-content: center;
+                    max-width: 155px;
+                    width: 100%;
+                    background-color: white;
+                    cursor: pointer;
+                    filter: drop-shadow(var(--box_shadow_nav));
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .rightSection {
+            max-width: 732px;
+            width: 100%;
+
+            &.rightSectionHe {
+                text-align: end;
+                .textSection {
+                    justify-content: flex-end;
+                }
+                .description {
+                    list-style: none;
+                }
+            }
+
+            .textSection {
+                display: flex;
+                flex-wrap: wrap;
+
+                &:nth-child(1) .description,
+                &:nth-child(2) .description {
+                    list-style: none;
+                }
+
+                .title {
+                    margin-bottom: 16px;
+
+                    span {
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 44px;
+                    }
+                }
+
+                .description {
+                    margin-bottom: 24px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .litvaLampsContainer {
+        .litvaLampsSection {
+            column-gap: 20px;
+
+            .leftSection {
+                .bigImage {
+                    .zoomButton {
+                        width: 6vw;
+                        height: 6vw;
+                    }
+                }
+
+                .smallImages {
+                    column-gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1200px) {
+    .zoomButton {
+        top: 40px !important;
+    }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1100px) {
+    .zoomButton {
+        top: 70px !important;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .litvaLampsContainer {
+        .litvaLampsSection {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 20px;
+        }
+    }
+    .zoomButton {
+        top: 60px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .description {
+        padding: 20px;
+    }
+    .breadcrumb {
+        position: absolute;
+        top: 100px;
+        left: 50px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .rightSection {
+        padding: 15px;
+    }
+    .zoomButton {
+        display: none !important;
+    }
+}

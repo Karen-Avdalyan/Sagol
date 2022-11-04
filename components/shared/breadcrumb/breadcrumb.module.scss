@@ -1,0 +1,29 @@
+.container {
+  width: fit-content;
+
+  :global(.ant-breadcrumb li:last-child a) {
+    color: var(--blue_500);
+    pointer-events: none;
+  }
+
+  :global(.ant-breadcrumb li) {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      color: var(--gray_800);
+      text-transform: capitalize;
+    }
+
+    :global(.ant-breadcrumb-separator) {
+      transform: translate(0, 2px);
+    }
+  }
+
+  img {
+    width: 8px;
+    height: 10px;
+  }
+}

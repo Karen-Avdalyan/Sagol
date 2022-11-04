@@ -1,0 +1,34 @@
+.productButtons {
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 590px;
+    width: 100%;
+    margin-bottom: 24px;
+    column-gap: 15px;
+    gap: 20px;
+    text-align: center;
+    &.productButtonsHe {
+        justify-content: flex-end;
+    }
+
+    div {
+        max-width: 285px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        column-gap: 4px;
+        padding: 10px 0;
+    }
+
+    .leftButton {
+        background-color: var(--purple-900);
+        color: var(--white-900);
+    }
+
+    .rightButton {
+        border: 1px solid var(--purple-900);
+        color: var(--purple-900);
+    }
+}

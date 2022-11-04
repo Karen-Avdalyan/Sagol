@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.workWithUsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 51px 0 73px 0;
+    .workWithUsSection {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &.workWithUsSectionHe {
+            flex-direction: row-reverse;
+            .sectionTitleHe {
+                text-align: end;
+            }
+            .sectionDescriptionHe {
+                text-align: end;
+            }
+        }
+        .sectionText {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            .sectionTitle {
+                margin-top: 52px;
+                span {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+            }
+            .sectionDescription {
+                span {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 150%;
+                    letter-spacing: 0.03em;
+                }
+            }
+        }
+        .sectionCards {
+            max-width: 706px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 54px;
+            &.sectionCardsHe {
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .workWithUsContainer {
+        padding: 51px 15px 73px;
+        .workWithUsSection {
+            flex-wrap: wrap;
+            row-gap: 30px;
+            justify-content: center;
+        }
+    }
+}

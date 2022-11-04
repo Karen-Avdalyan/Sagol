@@ -1,0 +1,23 @@
+.secondaryButton {
+    height: 70px;
+    background: var(--black-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 15px;
+    border: 1px solid var(--black-900);
+    border-radius: 10px;
+    .text {
+        font-size: 24px;
+        color: var(--black-900);
+    }
+    img {
+        width: 12px !important;
+    }
+    &:hover {
+        background: var(--black-900);
+    }
+    &:focus {
+        background: var(--black-900);
+    }
+}

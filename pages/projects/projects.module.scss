@@ -1,0 +1,182 @@
+.projects {
+    margin-bottom: 20px;
+
+    .projectImage {
+        background-image: url("/image/projectsBg.png");
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 60px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 65px;
+            letter-spacing: 0.05em;
+            color: var(--white-900);
+        }
+    }
+
+    .cardContainer {
+        margin: 0 auto;
+        max-width: 1440px;
+
+        .cards {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            &.cardsHe {
+                flex-direction: row-reverse;
+            }
+
+            .card {
+                box-shadow: var(--box-shadow) var(--box-shadow-for-card);
+                border-radius: 10px;
+                margin-bottom: 20px;
+                .oneCard {
+                    padding: 20px;
+                    background: var(--white-900);
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: var(--black-900);
+                    min-height: 300px;
+                }
+            }
+        }
+    }
+}
+
+.aboutCard {
+    column-gap: 75px;
+    max-width: 1200px;
+    padding: 20px;
+    background: var(--white-900);
+    border-radius: 20px;
+    min-height: 400px;
+
+    &.aboutCardHe {
+        display: flex;
+        text-align: end;
+        flex-direction: row-reverse;
+    }
+
+    .contentSecond {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--black-900);
+        line-height: 25px;
+        letter-spacing: 0.05em;
+    }
+
+    p {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: var(--black-900);
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--black-900);
+        line-height: 25px;
+        letter-spacing: 0.05em;
+    }
+
+    .cardImage {
+        min-width: 505px;
+        height: 335px;
+        padding-right: 30px;
+        height: fit-content;
+        float: left;
+    }
+
+    .modalCard {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .modalStyles {
+            border-radius: 20px;
+            width: max-content;
+        }
+
+        .closeButton {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ant-modal {
+        top: 0 !important;
+    }
+    .aboutCard {
+        margin: 0 auto;
+        img {
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+    .cardImage {
+        min-width: max-content !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .aboutCard {
+        flex-wrap: wrap !important;
+        display: flex;
+        justify-content: center;
+        .cardImage {
+            padding: 0 !important;
+        }
+        img {
+            // width: 300px !important;
+            // height: 300px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .ant-modal {
+        top: 0 !important;
+    }
+    .aboutCard {
+        margin: 0 auto;
+        img {
+            width: 300px !important;
+            height: 300px !important;
+        }
+    }
+    .cardImage {
+        min-width: max-content !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,166 @@
+.pagecontainer {
+    .headimage {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            color: var(--white-900);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+        }
+    }
+
+    .pagecontent {
+        padding-top: 50px;
+        display: flex;
+        margin-right: 30px;
+        margin: 0 auto;
+        max-width: 1440px;
+        &.pagecontentHe {
+            flex-direction: row-reverse;
+            text-align: end;
+        }
+
+        .textsection {
+            flex: 1;
+
+            .firstsection {
+                max-width: 90%;
+                margin: 0 auto;
+
+                p {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 150%;
+                }
+
+                text {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+            }
+
+            .secondsection {
+                max-width: 90%;
+                margin: 0 auto;
+                margin-top: 30px;
+
+                p {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 150%;
+                }
+
+                .itemsGroup {
+                    padding-left: 25px;
+                    &.itemsGroupHe {
+                        ul {
+                            text-decoration: none;
+                            list-style: none;
+                        }
+                    }
+                }
+
+                li {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    letter-spacing: 0.05em;
+                }
+            }
+        }
+        a {
+            flex: 1;
+        }
+    }
+
+    .buttonConatiner {
+        max-width: 1440px;
+        margin: 30px auto;
+        &.buttonConatinerHe {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .buttonHref {
+            background-color: var(--purple-900);
+            width: 320px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 200px;
+            color: var(--white-900);
+            border-radius: 5px;
+            padding: 0px 30px;
+            a:hover {
+                font-weight: 500;
+                transition: 0.2s;
+                font-size: 19px;
+            }
+        }
+    }
+
+    .products {
+        .productSection {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            padding-bottom: 250px;
+            max-width: 1440px;
+            margin: 0 auto;
+            align-items: center;
+            column-gap: 40px;
+            &.productSectionHe {
+                text-align: end;
+            }
+        }
+
+        h1 {
+            padding-top: 50px;
+            position: relative;
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 150%;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .pagecontent {
+        justify-content: center;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .headimage {
+        img {
+            height: 150px !important;
+        }
+        h1 {
+            font-size: 30px !important;
+        }
+    }
+    .pagecontent {
+        grid-template-columns: repeat(1, auto) !important;
+    }
+}

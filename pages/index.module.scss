@@ -1,0 +1,33 @@
+.homecontainer {
+    background-color: var(--secondary-color);
+    min-height: 829px;
+    .inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 2% 12% 0 12%;
+        .homeinner {
+            display: flex;
+            flex-direction: column;
+            padding: 0 4% 0 0;
+            gap: 16px;
+            h1 {
+                font-weight: 700;
+                font-style: normal;
+                font-size: 48px;
+                line-height: 72px;
+            }
+            p {
+                font-weight: 500;
+                font-style: normal;
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        img {
+            width: 100%;
+            padding: 5% 0 0 0;
+        }
+    }
+}
